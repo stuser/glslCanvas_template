@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GlslCanvas - star</title>
+    <title>GlslCanvas - Demo</title>
+	<script type="text/javascript" src="dist/main.js"></script>
     <script type="text/javascript" src="dist/GlslCanvas.js"></script>
     <style>
         body {
@@ -18,6 +19,12 @@
     </style>
 </head>
 <body>
+    <select id="shaderSelect">
+        <option value="11_breathingGlow.frag">11_breathingGlow</option>
+        <option value="20231025_star.frag">20231025_star</option>
+        <!-- Add more options here -->
+    </select>
+
     <canvas id="glslCanvas" data-fragment-url="20231025_star.frag" width="800" height="600" data-textures="data/moon.jpg, data/MonaLisa.jpg"></canvas>
 </body>
 <script>
