@@ -19,6 +19,7 @@ vec2 hash2( vec2 x )            //亂數範圍 [-1,1]
     x = x*k + k.yx;
     return -1.0 + 2.0*fract( 16.0 * k*fract( x.x*x.y*(x.x+x.y)) );
 }
+
 float gnoise( in vec2 p )       //亂數範圍 [-1,1]
 {
     vec2 i = floor( p );
