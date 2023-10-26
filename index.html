@@ -29,14 +29,35 @@
     <canvas id="glslCanvas" data-fragment-url="20231026_cycle.frag" width="640" height="480" data-textures="data/moon.jpg, data/MonaLisa.jpg"></canvas>
 </body>
 <script>
-    var canvas = document.getElementById("glslCanvas");
-    var sandbox = new GlslCanvas(canvas);
-    var texCounter = 0;
-    var sandbox_content = "";
-    var sandbox_title = "";
-    var sandbox_author = "";
-    var sandbox_thumbnail = "";
-    canvas.style.width = '50%';
-    canvas.style.height = '50%';
+	// 監聽下拉選單的變化
+	document.addEventListener("DOMContentLoaded", function() {
+		const shaderSelect = document.getElementById("shaderSelect");
+		const glslCanvas = document.getElementById("glslCanvas");
+
+		var sandbox = new GlslCanvas(glslCanvas);
+		var texCounter = 0;
+		var sandbox_content = "";
+		var sandbox_title = "";
+		var sandbox_author = "";
+		var sandbox_thumbnail = "";
+		canvas.style.width = '50%';
+		canvas.style.height = '50%';
+
+
+		shaderSelect.addEventListener("change", function() {
+			// 獲取選擇的GLSL程式檔名
+			const selectedShader = shaderSelect.value;
+			
+			// 更新<canvas>的data-fragment-url屬性
+			glslCanvas.setAttribute("data-fragment-url", selectedShader);
+			
+			// 呼叫函數或其他方法以刷新畫布
+			// 這會依賴於您用於處理GLSL的JavaScript庫
+			// 例如，如果您使用GlslCanvas庫，您可能會這樣做：
+			// const canvas = new GlslCanvas(glslCanvas);
+			// canvas.load(selectedShader);
+		});
+	});
+
 </script>
 </html>
