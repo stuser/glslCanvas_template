@@ -36,7 +36,7 @@
 
 		shaderSelect.addEventListener("change", function() {
 			// 獲取選擇的GLSL程式檔名
-			var selectedShader = shaderSelect.value;
+			const selectedShader = shaderSelect.value;
 			
 			// 更新<canvas>的data-fragment-url屬性
 			glslCanvas.setAttribute("data-fragment-url", selectedShader);
