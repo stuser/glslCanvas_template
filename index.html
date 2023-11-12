@@ -38,8 +38,8 @@
 		var sandbox_title = "";
 		var sandbox_author = "";
 		var sandbox_thumbnail = "";
-		canvas.style.width = '50%';
-		canvas.style.height = '50%';
+		canvas.style.width = '100%';
+		canvas.style.height = '100%';
 	}
 
 	// 監聽下拉選單的變化
@@ -50,7 +50,6 @@
 		//頁面的第一次初始化
 		var sandbox = new GlslCanvas(canvas);
 		setDefaultSettings(sandbox, canvas)
-		
 
 		shaderSelect.addEventListener("change", function() {
 			// 獲取選擇的GLSL程式檔名
@@ -64,19 +63,19 @@
 			// 例如，如果您使用GlslCanvas庫，您可能會這樣做：
 			// const canvas = new GlslCanvas(glslCanvas);
 			// canvas.load(selectedShader);
-			
-				var sandbox = new GlslCanvas(canvas);
-				setDefaultSettings(sandbox, canvas);
-				//var sandbox = new GlslCanvas(canvas);
-				//var texCounter = 0;
-				//var sandbox_content = "";
-				//var sandbox_title = "";
-				//var sandbox_author = "";
-				//var sandbox_thumbnail = "";
-				//canvas.style.width = '50%';
-				//canvas.style.height = '50%';			
-			
-				sandbox.load(selectedShader);
+		
+			var sandbox = new GlslCanvas(canvas);
+			setDefaultSettings(sandbox, canvas);
+			//var sandbox = new GlslCanvas(canvas);
+			//var texCounter = 0;
+			//var sandbox_content = "";
+			//var sandbox_title = "";
+			//var sandbox_author = "";
+			//var sandbox_thumbnail = "";
+			//canvas.style.width = '50%';
+			//canvas.style.height = '50%';			
+		
+			sandbox.load(selectedShader);
 			
 		});
 	});
