@@ -29,10 +29,28 @@
     <canvas id="glslCanvas" data-fragment-url="20231026_cycle.frag" width="640" height="480" data-textures="data/moon.jpg, data/MonaLisa.jpg"></canvas>
 </body>
 <script>
+
+	//畫布的預設參數
+	function setDefaultSettings (sandbox, canvas) {
+		var sandbox = new GlslCanvas(canvas);
+		var texCounter = 0;
+		var sandbox_content = "";
+		var sandbox_title = "";
+		var sandbox_author = "";
+		var sandbox_thumbnail = "";
+		canvas.style.width = '50%';
+		canvas.style.height = '50%';
+	}
+
 	// 監聽下拉選單的變化
 	document.addEventListener("DOMContentLoaded", function() {
 		const shaderSelect = document.getElementById("shaderSelect");
 		const canvas = document.getElementById("glslCanvas");
+		
+		//頁面的第一次初始化
+		var sandbox = new GlslCanvas(canvas);
+		setDefaultSettings(sandbox, canvas)
+		
 
 		shaderSelect.addEventListener("change", function() {
 			// 獲取選擇的GLSL程式檔名
@@ -46,14 +64,17 @@
 			// 例如，如果您使用GlslCanvas庫，您可能會這樣做：
 			// const canvas = new GlslCanvas(glslCanvas);
 			// canvas.load(selectedShader);
+			
 				var sandbox = new GlslCanvas(canvas);
-				var texCounter = 0;
-				var sandbox_content = "";
-				var sandbox_title = "";
-				var sandbox_author = "";
-				var sandbox_thumbnail = "";
-				canvas.style.width = '50%';
-				canvas.style.height = '50%';			
+				setDefaultSettings(sandbox, canvas);
+				//var sandbox = new GlslCanvas(canvas);
+				//var texCounter = 0;
+				//var sandbox_content = "";
+				//var sandbox_title = "";
+				//var sandbox_author = "";
+				//var sandbox_thumbnail = "";
+				//canvas.style.width = '50%';
+				//canvas.style.height = '50%';			
 			
 				sandbox.load(selectedShader);
 			
