@@ -4,7 +4,8 @@ Learning glsl shader with help of [GlslCanvas](https://github.com/patriciogonzal
 11_breathingGlow: basic 2D noise 
 
 ### Demo
-- index: (https://stuser.github.io/glslCanvas_template/)
+- index(2023.10.26): (https://stuser.github.io/glslCanvas_template/)
+- Hatching(2023.11.13): (https://stuser.github.io/glslCanvas_template/Hatching.html)
 
 ### 參考資料
 - shader 線上電子書: ( https://thebookofshaders.com/ )
