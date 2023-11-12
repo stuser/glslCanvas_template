@@ -8,7 +8,7 @@ Learning glsl shader with help of [GlslCanvas](https://github.com/patriciogonzal
 - shader 線上編輯器: (https://thebookofshaders.com/edit.php)
 - shadertoy Demo展示網站: ( https://www.shadertoy.com/ )
 
-shader套件:
-ISF for crossplatform interactive GLSL shaders ( https://isf.video/ )
-Shaderific for OpenGL ( https://shaderific.com/ )
-Inigo Quilez - sdf 2d 範例: ( https://iquilezles.org/articles/distfunctions2d/ )
+#### shader套件:
+- ISF for crossplatform interactive GLSL shaders ( https://isf.video/ )
+- Shaderific for OpenGL ( https://shaderific.com/ )
+- Inigo Quilez - sdf 2d 範例: ( https://iquilezles.org/articles/distfunctions2d/ )
