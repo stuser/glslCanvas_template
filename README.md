@@ -2,3 +2,13 @@ Learning glsl shader with help of [GlslCanvas](https://github.com/patriciogonzal
 [GlslCanvas](https://github.com/patriciogonzalezvivo/glslCanvas) is JavaScript Library that helps you easily load GLSL Fragment and Vertex Shaders into an HTML canvas. Originally made by Patricio Gonzalez Vivo author of [Book of Shaders](http://thebookofshaders.com) and [glslEditor](http://editor.thebookofshaders.com).
 
 11_breathingGlow: basic 2D noise 
+
+### 參考資料
+- shader 線上電子書: ( https://thebookofshaders.com/ )
+- shader 線上編輯器: (https://thebookofshaders.com/edit.php)
+- shadertoy Demo展示網站: ( https://www.shadertoy.com/ )
+
+shader套件:
+ISF for crossplatform interactive GLSL shaders ( https://isf.video/ )
+Shaderific for OpenGL ( https://shaderific.com/ )
+Inigo Quilez - sdf 2d 範例: ( https://iquilezles.org/articles/distfunctions2d/ )
