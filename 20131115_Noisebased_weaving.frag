@@ -24,20 +24,19 @@ float gnoise( in vec2 p )       //亂數範圍 [0,1]
                      dot( hash2( i + vec2(1.0,1.0) ), f - vec2(1.0,1.0) ), u.x), u.y);
 }
 
-//hatching
+//hatching 材質
 float texh(in vec2 p)
 {
     float rz= 1.0;
-    for (int i=0;i<10;i++){
-    	float g = gnoise(vec2(1., 80.)*p); //亂數範圍 [0,1]
-    	g=smoothstep(0.172, 0.232,g);
-        rz = min(1.-g,rz);
-		p.xy = p.yx;
-    	p += 0.07;
-    	p*= 1.2;
+    for (int i=0;i<8;i++){ //迴圈數會加重線條的密度
+    	float g = gnoise(vec2(1., 80.)*p); //亂數範圍 [0,1], 在y軸方向放大80倍
+    	g=smoothstep(0.172, 0.256,g); //加重線條(x,y,g_noise)
+        rz = min(1.-g,rz); //黑白反轉,取暗色
+		p.xy = p.yx; //xy軸互換
+    	p += -0.25; //線條的偏移 ----> *若做成動態變化, 效果不錯, 像是畫面向某一方向移動
+    	p*= 1.072; //線條密度放大倍數
     }
     return rz;
-
 }
 
 void main() {
