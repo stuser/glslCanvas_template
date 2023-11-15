@@ -9,27 +9,29 @@ precision mediump float;
 uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
-uniform sampler2D u_tex0;
-uniform sampler2D u_tex1;
-uniform sampler2D u_tex2;
-uniform sampler2D u_tex3;
-uniform sampler2D u_tex4;
-uniform sampler2D u_tex5;
-uniform sampler2D u_tex6;
 
+//依照網頁canvas的data-textures參數宣告之檔案順序:
+uniform sampler2D u_tex0; //對應到data/MonaLisa.jpg
+uniform sampler2D u_tex1; //對應到data/hatch_0.jpg
+uniform sampler2D u_tex2; //對應到data/hatch_1.jpg
+uniform sampler2D u_tex3; //對應到data/hatch_2.jpg
+uniform sampler2D u_tex4; //對應到data/hatch_3.jpg
+uniform sampler2D u_tex5; //對應到data/hatch_4.jpg
+uniform sampler2D u_tex6; //對應到data/hatch_5.jpg
 
 
 void main()
 {
     vec2 uv= gl_FragCoord.xy/u_resolution.xy;
-    vec2 vUv=fract(6.0*uv);                        //key
-    float shading= texture2D(u_tex0, uv).g; //取MonaLisa綠色版作為明亮值
-
+    vec2 vUv=fract(6.0*uv);                   //key
+    float shading= texture2D(u_tex0, uv).g;   //取MonaLisa"綠色(g)"版作為明亮值
 
     vec4 c;
+	            //以下要將明亮值分成六個等級，依不同等級去貼材質
+				
                 float step = 1. / 6.;
                 if( shading <= step ){   
-                    c = mix( texture2D( u_tex6, vUv ), texture2D( u_tex5, vUv ), 6. * shading );
+                    c = mix( texture2D( u_tex6, vUv ), texture2D( u_tex5, vUv ), 6. * shading );  //明亮值:最暗的使用data/hatch_5.jpg的材質, 次一級的用data/hatch_4.jpg
                 }
                 if( shading > step && shading <= 2. * step ){
                     c = mix( texture2D( u_tex5, vUv ), texture2D( u_tex4, vUv) , 6. * ( shading - step ) );
@@ -50,9 +52,6 @@ void main()
      vec4 inkColor = vec4(0.0, 0.0, 1.0, 1.0);
      vec4 src = mix( mix( inkColor, vec4( 1. ), c.r ), c, .5 );
      gl_FragColor = src;
-
-
-    
 
 }
 
