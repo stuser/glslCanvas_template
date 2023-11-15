@@ -5,6 +5,7 @@ Learning glsl shader with help of [GlslCanvas](https://github.com/patriciogonzal
 ### Demo
 - index (2023.10.26): (https://stuser.github.io/glslCanvas_template/)
 - Hatching (2023.11.13): (https://stuser.github.io/glslCanvas_template/Hatching.html)
+- Noisebased_weaving (2023.11.15): (https://stuser.github.io/glslCanvas_template/20131115_Noisebased_weaving.html)
 
 ### 參考資料
 - shader 線上電子書: ( https://thebookofshaders.com/ )
