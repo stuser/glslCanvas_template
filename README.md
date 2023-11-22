@@ -9,6 +9,7 @@ Learning glsl shader with help of [GlslCanvas](https://github.com/patriciogonzal
 - hatchingProcedural (2023.11.16): (https://stuser.github.io/glslCanvas_template/6_hatchingProcedural.html)
 
 ### 參考資料
+- 陽明交大 應藝 謝啟民老師: ( https://github.com/CMHsieh/ )
 - shader 線上電子書: ( https://thebookofshaders.com/ )
 - shader 線上編輯器: (https://thebookofshaders.com/edit.php)
 - shadertoy Demo展示網站: ( https://www.shadertoy.com/ )
