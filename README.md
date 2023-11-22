@@ -7,6 +7,7 @@ Learning glsl shader with help of [GlslCanvas](https://github.com/patriciogonzal
 - Hatching (2023.11.13): (https://stuser.github.io/glslCanvas_template/Hatching.html)
 - Noisebased_weaving (2023.11.15): (https://stuser.github.io/glslCanvas_template/20131115_Noisebased_weaving.html)
 - hatchingProcedural (2023.11.16): (https://stuser.github.io/glslCanvas_template/6_hatchingProcedural.html)
+- pixelBrick (2023.11.22): (https://stuser.github.io/glslCanvas_template/3_pixelBrick.html)
 
 ### 參考資料
 - 陽明交大 應藝 謝啟民老師: ( https://github.com/CMHsieh/ )
