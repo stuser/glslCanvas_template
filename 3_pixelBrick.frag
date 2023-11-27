@@ -12,14 +12,14 @@ uniform sampler2D u_tex0; //data/MonaLisa.jpg
 
 void main() {
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
-    //st.x *= u_resolution.x/u_resolution.y;
+    st.x *= u_resolution.x/u_resolution.y;
 	
 	//以下進行位置的大小變化設計, 用時間變數(u_time)
-    //float paraX = (sin(u_time*0.1)*0.5+0.5)*45.;
-    //float paraY = (cos(u_time*0.05)*0.5+0.5)*125.;
+    float paraX = (sin(u_time*0.1)*0.5+0.5)*45.;
+    float paraY = (cos(u_time*0.05)*0.5+0.5)*125.;
     
     //以下進行格化效果,指定變化的尺寸
- 	//vec2 brickSize=vec2(paraX+5.0, paraY+3.0) ; //n_mouse*60.0 定義單位格化的尺寸(paraX+5.0, 用意是加上最小還有5.0的單位尺寸)
+ 	vec2 brickSize=vec2(paraX+5.0, paraY+3.0) ; //n_mouse*60.0 定義單位格化的尺寸(paraX+5.0, 用意是加上最小還有5.0的單位尺寸)
 	
 	//***************設計
 	//進階設計: 
@@ -28,7 +28,7 @@ void main() {
 	//***************
 	
 	//***************測試
-	vec2 brickSize=vec2(20.0,16.0); //直接給值做測試用
+	//vec2 brickSize=vec2(20.0,16.0); //直接給值做測試用
 	//***************
 	
  	vec2 uv=st; //[0~1]
