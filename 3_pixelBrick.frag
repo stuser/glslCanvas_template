@@ -15,8 +15,8 @@ void main() {
     st.x *= u_resolution.x/u_resolution.y;
 	
 	//以下進行位置的大小變化設計, 用時間變數(u_time)
-    float paraX = (sin(u_time*0.1)*0.5+0.5)*45.;
-    float paraY = (cos(u_time*0.05)*0.5+0.5)*125.;
+    float paraX = (sin(u_time*0.1)*0.5+0.5)*32.;
+    float paraY = (cos(u_time*0.05)*0.5+0.5)*64.;
     
     //以下進行格化效果,指定變化的尺寸
  	vec2 brickSize=vec2(paraX+5.0, paraY+3.0) ; //n_mouse*60.0 定義單位格化的尺寸(paraX+5.0, 用意是加上最小還有5.0的單位尺寸)
