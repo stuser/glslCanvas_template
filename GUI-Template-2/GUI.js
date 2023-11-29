@@ -27,7 +27,7 @@ window.onload = function() {
 function preload(){
 	theShader = loadShader('vert.glsl', 'frag.frag');
 	//textureBase = loadImage("data/MonaLisa.jpg");
-	textureBase = loadImage("/data/DALL%C2%B7E_sakura_theme_2.png"); //指定在Repo第一層的data資料匣
+	textureBase = loadImage("data/DALL%C2%B7E_sakura_theme_2.png");
 }
 // to here
 
