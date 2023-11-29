@@ -27,7 +27,7 @@ window.onload = function() {
 function preload(){
 	theShader = loadShader('vert.glsl', 'frag.frag');
 	//textureBase = loadImage("data/MonaLisa.jpg");
-	textureBase = loadImage("data/DALL%C2%B7E_sakura_theme_2.png");
+	textureBase = loadImage("data/DALL·E_sakura_theme_2.png");
 }
 // to here
 
