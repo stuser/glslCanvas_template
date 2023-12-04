@@ -25,8 +25,10 @@ window.onload = function() {
 // Part 1 - Step 4
 // from here
 function preload(){
-	theShader = loadShader('vert.glsl', 'frag.frag');
+	//theShader = loadShader('vert.glsl', 'frag.frag');
 	//textureBase = loadImage("data/MonaLisa.jpg");
+	
+	theShader = loadShader('vert.glsl', '6_hatchingProcedural.frag');
 	textureBase = loadImage("data/DALL_E_sakura_theme_2.png");
 }
 // to here
