@@ -9,6 +9,7 @@ Learning glsl shader with help of [GlslCanvas](https://github.com/patriciogonzal
 - hatchingProcedural (2023.11.16): (https://stuser.github.io/glslCanvas_template/6_hatchingProcedural.html)
 - pixelBrick (2023.11.22): (https://stuser.github.io/glslCanvas_template/3_pixelBrick.html)
 - 課程新的GUI-template (2023.11.29): (https://stuser.github.io/glslCanvas_template/GUI-Template-2/index.html)
+- 課程新的template-p5js-有開webcam (2023.12.6): (https://stuser.github.io/glslCanvas_template/glslP5js_template/index.html)
 
 ### 參考資料
 - 陽明交大 應藝 謝啟民老師: ( https://github.com/CMHsieh/ )
